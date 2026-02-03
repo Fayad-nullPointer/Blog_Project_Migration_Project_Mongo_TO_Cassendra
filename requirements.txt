@@ -1,0 +1,11 @@
+# Flask web framework
+flask>=2.0
+
+# MongoDB driver
+pymongo>=4.0
+
+# Cassandra driver
+cassandra-driver>=3.25.0
+
+# Environment configuration
+python-dotenv>=1.0.0

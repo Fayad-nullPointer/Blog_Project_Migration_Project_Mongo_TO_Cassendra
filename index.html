@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Simple Blog</title>
+</head>
+<body>
+    <header>
+        <h1>My Modular Blog</h1>
+    </header>
+    
+    <main>
+        <section id="post-form">
+            <h3>Create a Post</h3>
+            <input type="text" id="username" placeholder="Your Name">
+            <input type="text" id="title" placeholder="Blog Title">
+            <textarea id="content" placeholder="Content"></textarea>
+            <button onclick="submitPost()">Publish</button>
+        </section>
+
+        <hr>
+
+        <div class="layout-container">
+            <div class="content-area">
+                <div class="controls">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" onchange="loadPosts()">
+                        <option value="date">Newest First</option>
+                        <option value="title">Alphabetical (A-Z)</option>
+                    </select>
+                </div>
+                <div id="blog-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
